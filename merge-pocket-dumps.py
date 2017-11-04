@@ -3,7 +3,7 @@ import json
 import sys
 
 def make_object(status, complete, lst, err, search_meta, since):
-    ''' Make the a new object (a complete Pocket API response) '''
+    ''' Make a new object (a complete Pocket API response) '''
     return {'status':status, 'complete':complete, 'list':lst, 'error':err, 'search_meta':search_meta, 'since':since}
 
 def add_to_list(tobj, sobj):
