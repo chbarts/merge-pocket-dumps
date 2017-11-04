@@ -23,7 +23,7 @@ def merge_two_objects(obj1, obj2):
 
 def make_dummy():
     ''' Create a dummy object (a complete Pocket API response) '''
-    return make_object(0, 0, None, None, None, 0)
+    return make_object(0, 0, {}, None, None, 0)
 
 if __name__ == '__main__':
     if len(sys.argv) == 1:
