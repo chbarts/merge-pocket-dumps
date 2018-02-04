@@ -33,5 +33,5 @@ if __name__ == '__main__':
     for fname in sys.argv[1:]:
         with open(fname) as inf:
             dummy = merge_two_objects(dummy, json.load(inf))
-    json.dump(dummy, sys.stdout, sort_keys=True)
+    json.dump(dummy, sys.stdout)
     sys.exit(0)
