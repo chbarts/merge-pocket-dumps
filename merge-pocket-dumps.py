@@ -32,6 +32,6 @@ if __name__ == '__main__':
     dummy = make_dummy()
     for fname in sys.argv[1:]:
         with open(fname) as inf:
-            dummy = merge_two_objects(dummy, json.loads(inf.read()))
-    print(json.dumps(dummy))
+            dummy = merge_two_objects(dummy, json.load(inf))
+    json.dump(dummy, sys.stdout)
     sys.exit(0)
