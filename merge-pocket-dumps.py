@@ -14,6 +14,8 @@ def add_to_list(tobj, sobj):
 
 def merge_two_objects(obj1, obj2):
     ''' Create a new object (a complete Pocket API response) which is the union of the two input objects, date set to the latter '''
+    if len(obj2['list']) == 0:
+        return obj1
     since = obj1['since']
     if obj2['since'] > since:
         since = obj2['since']
